@@ -1,0 +1,12 @@
+
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: seaorm
+      POSTGRES_PASSWORD: seaorm
+      POSTGRES_DB: seaorm
+    ports:
+      - 5435:5432
