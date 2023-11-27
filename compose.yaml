@@ -5,8 +5,6 @@ services:
     image: postgres:latest
     restart: always
     environment:
-      POSTGRES_USER: seaorm
-      POSTGRES_PASSWORD: seaorm
-      POSTGRES_DB: seaorm
+      POSTGRES_PASSWORD: password
     ports:
       - 5435:5432
